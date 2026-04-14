@@ -33,7 +33,7 @@ jobs:
           sudo apt-get install -y pandoc weasyprint
 
       - name: Build Resume
-        run:
+        run: |
           make html pdf
           mkdir -p pages
           cp resume.html resume.pdf pages
@@ -58,12 +58,3 @@ jobs:
         with:
           name: resume-html
           path: cv.html
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # Upload entire repository
-          path: '.'
