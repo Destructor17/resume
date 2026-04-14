@@ -1,0 +1,37 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Build Resume
+        run: make all
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: cv.pdf
+
+      - name: Upload HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-html
+          path: cv.html
