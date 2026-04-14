@@ -3,5 +3,11 @@
 }
 
 html {
-    font-size: 8pt;
+    font-size: 10pt;
+}
+
+ul,
+ol {
+    padding-left: 1em;
+    /* Keeping padding relative to the font size of the list */
 }
