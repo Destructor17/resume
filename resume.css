@@ -9,5 +9,16 @@ html {
 ul,
 ol {
     padding-left: 1em;
-    /* Keeping padding relative to the font size of the list */
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
