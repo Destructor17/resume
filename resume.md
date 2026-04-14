@@ -5,6 +5,8 @@ Have strong problem-solving and debugging abilities.
 Adept at navigating diverse team structures, from startups to large-scale enterprise environments.
 Extensive delivering experience within Scrum and Kanban frameworks.
 
+## Professional Experience
+
 ### Rust Developer | Jun 2024 - Feb 2026
 
 Projects: NDA (Virtual machines)

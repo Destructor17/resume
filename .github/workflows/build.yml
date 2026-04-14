@@ -46,15 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4
-        with:
-          name: resume-pdf
-          path: cv.pdf
-
-      - name: Upload HTML
-        uses: actions/upload-artifact@v4
-        with:
-          name: resume-html
-          path: cv.html
