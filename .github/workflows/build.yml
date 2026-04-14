@@ -2,27 +2,50 @@ name: Build Resume
 
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Pandoc
-        uses: r-lib/actions/setup-pandoc@v2
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Install TeX Live
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+          sudo apt-get install -y pandoc weasyprint
 
       - name: Build Resume
-        run: make all
+        run:
+          make html pdf
+          mkdir -p pages
+          cp resume.html resume.pdf pages
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
@@ -35,3 +58,12 @@ jobs:
         with:
           name: resume-html
           path: cv.html
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Upload entire repository
+          path: '.'
