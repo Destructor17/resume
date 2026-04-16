@@ -9,6 +9,7 @@ Extensive delivering experience within Scrum and Kanban frameworks.
 
 ### Rust Developer | Jun 2024 - Feb 2026
 
+Self-employed
 Projects: NDA (Virtual machines)
 
 - Implemented a web and mobile applications, as well as CLI utility with extensive functionality, from scratch
@@ -19,6 +20,7 @@ Key technologies: Rust, C/C++, GitHub Actions, Wasmtime, Tokio, Axum, SeaORM (fo
 
 ### Flutter Developer | Oct 2024 – Present
 
+At Harbros Agency
 Projects: EMIAS (Medical), Frisbi24 (Fintech), Foodlabs (Health & Fitness), NDA (Travel)
 
 - Built multiple complex applications from scratch (EMIAS, Travel Booking) under tight deadlines, managing complex data structures and edge cases
@@ -30,6 +32,7 @@ Key technologies: Dart, Flutter, BLoC, Riverpod, Retrofit for Dart, WebView for 
 
 ### iOS Developer | Oct 2021 – May 2025
 
+At Harbros Agency
 Projects: Mooni (Health), PBS (Education), NDA (Fintech/Banking), NDA (Messenger), NDA (Navigation)
 
 - Maintained critical banking modules (payments and currency exchange), eliminated systemic technical debt and wrote custom static analysis rules
