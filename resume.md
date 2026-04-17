@@ -17,7 +17,7 @@ Projects: NDA (Virtual machines)
 
 Key technologies: Rust, C/C++, GitHub Actions, Wasmtime, Tokio, Axum, SeaORM (for PostgreSQL), Tungstenite (for WebSockets), WebRTC, Wry, Winit, Vulkan, GDBStub for Rust
 
-### Flutter Developer | At Harbros Agency | Oct 2024 – Present
+### Flutter Developer | Harbros Agency | Oct 2024 – Present
 
 
 
@@ -30,7 +30,7 @@ Projects: EMIAS (Medical), Frisbi24 (Fintech), Foodlabs (Health & Fitness), NDA 
 
 Key technologies: Dart, Flutter, BLoC, Riverpod, Retrofit for Dart, WebView for Flutter
 
-### iOS Developer | At Harbros Agency | Oct 2021 – May 2025
+### iOS Developer | Harbros Agency | Oct 2021 – May 2025
 
 Projects: Mooni (Health), PBS (Education), NDA (Fintech/Banking), NDA (Messenger), NDA (Navigation)
 
