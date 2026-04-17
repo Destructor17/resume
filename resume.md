@@ -1,4 +1,8 @@
-# Artem Borovik
+# Artem Borovik 
+
+LinkedIn: [www.linkedin.com/in/borovik-artem](https://www.linkedin.com/in/borovik-artem)
+
+Mail: [polzovatellllk@gmail.com](mailto://polzovatellllk@gmail.com)
 
 Mobile developer with diverse experience, interested in switching to Rust ecosystem. 
 Have strong problem-solving and debugging abilities.
