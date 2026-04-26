@@ -9,7 +9,7 @@ Currently focused on opportunities in the Rust ecosystem.
 
 ## Professional Experience
 
-### Rust Developer | Self-employed | Jun 2024 - Feb 2026
+### Rust Developer | Startup | Jun 2024 - Feb 2026
 
 Projects: NDA (Virtual machines)
 
